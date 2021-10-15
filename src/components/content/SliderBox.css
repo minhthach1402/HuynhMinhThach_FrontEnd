@@ -1,0 +1,142 @@
+.box_slider {
+    width: 100%;
+    height: 1072px;
+    background-color: var(--secondary-color);
+    /* border-radius: 50px; */
+}
+
+.wraper_slider {
+    width: 100%;
+    height: 80%;
+}
+
+.content-slider {
+    width: 100%;
+}
+
+.bg-slider {
+    width: 100%;
+    height: 480px;
+}
+
+.box_action {
+    /* display: flex; */
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+
+.box_action>img {
+    width: 42%;
+    position: absolute;
+    left: 29.5%;
+}
+
+.action_block {
+    width: 48%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 208px;
+    
+}
+
+.action_block button {
+    border: none;
+    background-color: rgba(0 , 0, 0, 0);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.slider{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 4;
+}
+
+.slick-slide div {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.slider>div {
+    padding-bottom: 20px;
+}
+
+.slick-dots li button::before {
+    font-size: 10px;
+}
+
+.slick-dots li.slick-active button::before {
+    font-size: 10px;
+    color: var(--primary-color);
+}
+
+.content-slider {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-slider h2 {
+    font-size: var(--font-nornal-title);
+    padding-top: 130px;
+    padding-bottom: 85px;
+    font-weight: 500;
+}
+
+.btn_action {
+    display: block;
+    width: 212px;
+    font-size: var(--font-normal);
+    border: none;
+    background-color: var(--primary-color);
+    padding: 16px 17px;
+    border-radius: 50px;
+    color: var(--default-color);
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.fa-chevron-right {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 375px){
+    .box_action>img {
+        width: 100%;
+        left: 0;
+    }
+
+    .box_slider {
+        height: 800px;
+    }
+
+    .btn_action {
+        margin-top: -40px;
+    }
+
+    .action_block {
+        display: none;
+    }
+
+    .slick-slide div {
+        width: 100%;
+    }
+
+    .content-slider {
+        width: 100%;
+    }
+
+    .bg-slider {
+        display: none;
+    }
+
+    .wraper_slider {
+        height: 90%;
+    }
+}

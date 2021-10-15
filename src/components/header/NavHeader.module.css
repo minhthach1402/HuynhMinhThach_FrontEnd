@@ -1,0 +1,154 @@
+.header {
+  width: 65%;
+  height: 108px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 20%;
+}
+
+.logo span {
+  display: block;
+  width: 138px;
+  background-color: var(--bg-cl-logo);
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+.menu {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.profile {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  align-items: center;
+}
+
+.menu li,
+.profile li {
+  height: 100%;
+  margin-left: 40px;
+  align-items: center;
+  cursor: pointer;
+  /* font-weight: bold; */
+}
+
+.menu li span,
+.profile li span {
+  font-size: var(--font-normal);
+  display: block;
+  padding-top: 46px;
+}
+
+.menu li:hover,
+.profile li:hover {
+  border-bottom: 3px solid var(--primary-color);
+  transition: linear 0.25s;
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    width: 90%;
+    height: 108px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 10%;
+  }
+
+  .logo span {
+    display: block;
+    width: 100px;
+    background-color: var(--bg-cl-logo);
+    color: var(--primary-color);
+    font-weight: 900;
+  }
+
+  .sub_menu {
+    width: 70%;
+    height: 100%;
+    background-color: var(--default-color );
+    list-style: none;
+    transition: ease-in 0.25s;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    animation:  slide-down 300ms forwards;
+  }
+
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .sub_menu>div {
+      width: 100%;
+      height: 50px;
+      padding-left: 10px;
+      padding-top: 10px;
+  }
+
+  .sub_menu li {
+      padding: 8px;
+      border-bottom: 1px solid var(--text-other);
+      text-align: left;
+  }
+
+  .icon__menu {
+      margin: 0px;
+      padding: 7px;
+      font-size: 25px;
+      color: var(--default-color);
+  }
+
+  .btn_show-menu {
+    border: none;
+    background-color: var(--btn-essential-color);
+    border-radius: 5px;
+  }
+
+  .close {
+      display: block;
+      padding: 8px;
+      font-weight: 700;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 999;
+  }
+
+  .overlay {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 998;
+  }
+}

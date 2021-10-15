@@ -1,0 +1,49 @@
+.banner__box {
+    width: 100%;
+    height: 657px;
+    background-image: url("../../assest/Images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.content__banner {
+    color: var(--default-color);
+    position: absolute;
+    top: 24.5%;
+    left: 17.5%;
+    z-index: 2;
+}
+
+.content__banner h2 {
+    font-size: var(--font-max-title);
+    font-weight: 1500;
+    margin-bottom: 34px;
+}
+
+.content__banner span {
+    display: block;
+    font-size: var(--font-min);
+    font-weight: 900;
+    margin-bottom: 95px;
+}
+
+.content__banner a {
+    display: flex;
+    align-items: center;
+}
+
+.fa-chevron-circle-right {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 375px) {
+
+    .content__banner {
+        width: 90%;
+        text-align: justify;
+        left: 5%;
+    }
+}

@@ -1,0 +1,69 @@
+.sub_menu {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--default-color );
+    list-style: none;
+    transition: ease-in 0.25s;
+    margin: 0px;
+    padding: 0px;
+    animation:  slide-down 300ms forwards;
+  }
+
+  .logo {
+    width: 10%;
+  }
+
+  .logo span {
+    display: block;
+    width: 100px;
+    background-color: var(--bg-cl-logo);
+    color: var(--primary-color);
+    font-weight: 900;
+  }
+
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .sub_menu>div {
+      width: 100%;
+      height: 50px;
+      padding-left: 10px;
+      padding-top: 10px;
+  }
+
+  .sub_menu li {
+      padding: 8px;
+      border-bottom: 1px solid var(--text-other);
+      text-align: left;
+  }
+
+  .icon__menu {
+      margin: 0px;
+      padding: 7px;
+      font-size: 25px;
+      color: var(--default-color);
+  }
+
+  .btn_show-menu {
+    border: none;
+    background-color: var(--btn-essential-color);
+    border-radius: 5px;
+  }
+
+  .close {
+      display: block;
+      padding: 8px;
+      font-weight: 700;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 999;
+  }
